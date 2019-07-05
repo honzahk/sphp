@@ -5,7 +5,7 @@
 	"main": "sphp.js",
 	"scripts": {
 		"dev": "echo run manually via 'sudo ./sphp.js X.Y'",
-		"dist": "pkg index.js -o sphp --out-path dist -t node10-linux-x64"
+		"dist": "pkg index.js -o dist/sphp -t node10-linux-x64"
 	},
 	"author": "HonzaHK",
 	"license": "MIT"
