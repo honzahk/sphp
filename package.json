@@ -4,7 +4,7 @@
 	"description": "switch php version easily",
 	"main": "sphp.js",
 	"scripts": {
-		"dev": "echo run manually via 'sudo ./sphp.js X.Y'",
+		"dev": "sudo ./index.js",
 		"dist": "pkg index.js -o dist/sphp -t node10-linux-x64"
 	},
 	"author": "HonzaHK",
