@@ -1,0 +1,12 @@
+{
+  "name": "sphp",
+  "version": "0.0.1",
+  "description": "switch php version easily",
+  "main": "sphp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HonzaHK",
+  "license": "MIT",
+  "devDependencies": {}
+}
