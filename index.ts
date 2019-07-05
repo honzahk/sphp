@@ -1,8 +1,6 @@
-#!/usr/bin/node
-"use strict";
-const execSync = require("child_process").execSync;
-console.log.error = (...args) => console.log("\x1b[31m%s\x1b[0m", ...args);
-console.log.ok = (...args) => console.log("\x1b[36m%s\x1b[0m", ...args);
+import {execSync} from "child_process";
+(console.log as any).error = (...args) => console.log("\x1b[31m%s\x1b[0m", ...args);
+(console.log as any).ok = (...args) => console.log("\x1b[36m%s\x1b[0m", ...args);
 
 const checkSudo = () => {
 	const sudo_euid = 0;
@@ -21,7 +19,7 @@ const checkArgs = () => {
 };
 
 const printUnsupportedVersion = (target, installed) => {
-	console.log.error(`Unsupported version!`);
+	(console.log as any).error(`Unsupported version!`);
 	console.log(`CLI versions installed: ${installed.cli.join(" , ")}`);
 	console.log(`A2  versions installed: ${installed.a2.join(" , ")}`);
 };
@@ -73,7 +71,7 @@ const main = () => {
 
 	switchPhpCLI(phpTarget);
 	switchPhpA2(phpTarget);
-	console.log.ok("Done!");
+	(console.log as any).ok("Done!");
 };
 
 main();

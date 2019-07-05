@@ -4,9 +4,14 @@
 	"description": "switch php version easily",
 	"main": "sphp.js",
 	"scripts": {
-		"dev": "sudo ./index.js",
-		"dist": "pkg index.js -o dist/sphp -t node10-linux-x64"
+		"dev": "./node_modules/typescript/bin/tsc && sudo node dist/index.js",
+		"dist": "./node_modules/typescript/bin/tsc && pkg dist/index.js -o dist/sphp -t node10-linux-x64",
+		"clean": "rm -rf dist/index.js dist/sphp"
 	},
 	"author": "HonzaHK",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^12.0.12",
+		"typescript": "^3.5.2"
+	}
 }

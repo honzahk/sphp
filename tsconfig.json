@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"target": "es5",
+
+		"strict": true,
+		"noImplicitAny": false,
+		"noUnusedLocals": false,
+		"strictNullChecks": false
+	}
+}
